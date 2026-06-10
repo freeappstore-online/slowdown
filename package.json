@@ -1,0 +1,13 @@
+{
+  "name": "slowdown",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @slowdown/web dev",
+    "build": "pnpm --filter @slowdown/web build",
+    "preview": "pnpm --filter @slowdown/web preview",
+    "typecheck": "pnpm --filter @slowdown/web exec tsc -b"
+  }
+}
