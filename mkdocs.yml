@@ -7,7 +7,7 @@ use_directory_urls: true
 theme:
   name: mkdocs
   locale: en
-  highlightjs: true
+  highlightjs: false
 nav:
   - App Review: index.md
 extra_css:
