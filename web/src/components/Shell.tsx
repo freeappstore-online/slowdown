@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Home, User } from 'lucide-react'
+import { History, TimerReset, User } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 
 interface ShellProps {
@@ -7,7 +7,8 @@ interface ShellProps {
 }
 
 const NAV_ITEMS = [
-  { to: '/', label: 'Home', icon: Home },
+  { to: '/', label: 'Reset', icon: TimerReset },
+  { to: '/history', label: 'History', icon: History },
   { to: '/account', label: 'Account', icon: User },
 ] as const
 
@@ -63,7 +64,7 @@ export function Shell({ children }: ShellProps) {
 
       {/* Mobile dock */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--line)] bg-[var(--dock)]/92 px-2 pb-[calc(env(safe-area-inset-bottom)+0.25rem)] pt-1 backdrop-blur-2xl lg:hidden">
-        <div className="mx-auto grid max-w-xs grid-cols-2">
+        <div className="mx-auto grid max-w-sm grid-cols-3">
           {NAV_ITEMS.map(({ to, label, icon: Icon }) => (
             <NavLink
               key={to}

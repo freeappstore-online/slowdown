@@ -34,9 +34,9 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: 'slowdown',
-        short_name: 'slowdown',
-        description: 'Free slowdown app — part of FreeAppStore',
+        name: 'Slowdown',
+        short_name: 'Slowdown',
+        description: 'A simple reset app that recommends one short practice from your current mood and energy.',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',

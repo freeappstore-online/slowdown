@@ -1,6 +1,6 @@
 # slowdown
 
-A free app on FreeAppStore.
+A simple emotional reset app that recommends one short practice from a mood, energy, mental speed, and tension check-in.
 
 - Subdomain: `slowdown.freeappstore.online`
 - Dev: `pnpm install && pnpm dev`
@@ -14,8 +14,11 @@ before writing or changing anything.
 ---
 
 ## Architecture
-This is a CONNECTED app — the free and pro versions share the same Firebase backend.
-- Free version: limited features (browse, basic interactions)
-- Pro version: full features (create, collaborate, AI, cloud sync)
-- Feature gating: Firestore security rules enforce access based on user plan (free/pro)
-- Firebase config: set via VITE_FIREBASE_* env vars (or .env.production file)
+
+This is a connected local-first app. It works without backend configuration using browser storage, and can sync saved resets through Firebase when `VITE_FIREBASE_*` values are configured.
+
+## Product notes
+
+- Local-first mood check-ins with optional Firebase sync when auth is configured.
+- Browser-side background agents score safety, recent patterns, and the best short practice.
+- This is a wellbeing tool only; avoid diagnostic, treatment, or crisis-service claims.
