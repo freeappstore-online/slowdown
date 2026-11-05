@@ -1,9 +1,9 @@
 :root {
-  --ink: #17202a;
-  --muted: #596777;
-  --paper: #f6f8f8;
-  --panel: #ffffff;
-  --line: #d9e0e5;
+  --report-ink: #17202a;
+  --report-muted: #596777;
+  --report-paper: #f6f8f8;
+  --report-panel: #ffffff;
+  --report-line: #d9e0e5;
   --green: #23735b;
   --green-soft: #e7f4ef;
   --blue: #2d638f;
@@ -15,7 +15,7 @@
 }
 
 body {
-  color: var(--ink);
+  color: var(--report-ink);
   background:
     linear-gradient(180deg, rgba(246, 248, 248, 0.97), rgba(255, 255, 255, 0.97)),
     repeating-linear-gradient(90deg, rgba(35, 115, 91, 0.05) 0 1px, transparent 1px 72px),
@@ -25,7 +25,7 @@ body {
 
 .wy-nav-side,
 .wy-side-nav-search {
-  background: var(--ink);
+  background: var(--report-ink);
 }
 
 .wy-nav-content {
@@ -44,7 +44,7 @@ body {
 .rst-content h1,
 .rst-content h2,
 .rst-content h3 {
-  color: var(--ink);
+  color: var(--report-ink);
   letter-spacing: 0;
 }
 
@@ -55,14 +55,14 @@ body {
 }
 
 .rst-content h2 {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--report-line);
   padding-top: 2rem;
   margin-top: 2.4rem;
 }
 
 .lead {
   max-width: 780px;
-  color: var(--muted);
+  color: var(--report-muted);
   font-size: 1.2rem;
   line-height: 1.6;
 }
@@ -88,7 +88,7 @@ body {
 .metric,
 .app-card,
 .step-card {
-  border: 1px solid var(--line);
+  border: 1px solid var(--report-line);
   border-radius: 8px;
   box-shadow: 0 12px 32px rgba(23, 32, 42, 0.08);
 }
@@ -114,7 +114,7 @@ body {
 .scene-card span {
   display: block;
   max-width: 440px;
-  color: var(--muted);
+  color: var(--report-muted);
   line-height: 1.5;
   margin-top: 0.5rem;
 }
@@ -138,7 +138,7 @@ body {
 .metric,
 .app-card,
 .step-card {
-  background: var(--panel);
+  background: var(--report-panel);
   padding: 1rem;
 }
 
@@ -153,12 +153,12 @@ body {
 .app-card p,
 .app-card li,
 .step-card p {
-  color: var(--muted);
+  color: var(--report-muted);
   line-height: 1.5;
 }
 
 .callout {
-  background: var(--ink);
+  background: var(--report-ink);
   color: #ffffff;
   padding: 1.4rem;
   margin: 1.5rem 0;
@@ -198,8 +198,8 @@ body {
   height: 30px;
   border-radius: 8px;
   font-weight: 900;
-  background: var(--paper);
-  border: 1px solid var(--line);
+  background: var(--report-paper);
+  border: 1px solid var(--report-line);
 }
 
 .yes { color: var(--green); font-weight: 800; }
@@ -211,9 +211,9 @@ body {
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--line);
+  border: 1px solid var(--report-line);
   border-radius: 8px;
-  background: var(--panel);
+  background: var(--report-panel);
   box-shadow: 0 10px 26px rgba(23, 32, 42, 0.05);
 }
 
@@ -227,7 +227,7 @@ body {
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
-  background: var(--panel);
+  background: var(--report-panel);
   box-shadow: none;
 }
 
@@ -243,7 +243,7 @@ body {
 .rst-content .matrix-scroll table.docutils th,
 .rst-content table.docutils td,
 .rst-content table.docutils th {
-  border-color: var(--line);
+  border-color: var(--report-line);
   padding: 0.72rem;
   vertical-align: top;
 }

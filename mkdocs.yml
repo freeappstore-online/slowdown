@@ -2,7 +2,7 @@ site_name: Parent Volleyball Group App Review
 site_description: A concise app comparison for a weekly parent volleyball and playground group.
 site_url: https://slowdown.freeappstore.online/docs/
 docs_dir: docs
-site_dir: web/public/docs
+site_dir: web/dist/docs
 use_directory_urls: true
 theme:
   name: mkdocs

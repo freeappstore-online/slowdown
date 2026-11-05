@@ -2,7 +2,6 @@ node_modules
 dist
 .tmp
 *.tsbuildinfo
-web/public/docs/
 .env
 .env.local
 .env.production

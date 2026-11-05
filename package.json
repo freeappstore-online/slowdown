@@ -6,7 +6,7 @@
   "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
   "scripts": {
     "dev": "pnpm --filter @slowdown/web dev",
-    "build": "mkdocs build --clean && pnpm --filter @slowdown/web build",
+    "build": "pnpm --filter @slowdown/web build && mkdocs build --clean",
     "docs:build": "mkdocs build --clean",
     "docs:serve": "mkdocs serve",
     "preview": "pnpm --filter @slowdown/web preview",
